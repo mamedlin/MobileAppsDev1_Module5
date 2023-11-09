@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MobileAppsDev1_Module5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="CUW-Ap-7hG">
+                                <rect key="frame" x="0.0" y="59" width="398" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQs-6M-yKj">
+                                        <rect key="frame" x="10" y="0.0" width="378" height="162.33333333333334"/>
+                                        <string key="text">The once-prosperous Kingdom of Dwarves has fallen to the relentless raids of the orcish horde, forcing the dwarves to flee their ancestral city. They embark on a perilous adventure to discover the legendary Golden Gate, where they hope to establish a new kingdom, far from the clutches of the ruthless orcs. Now, the fate of the dwarves is in your hands. Should they:</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="cDQ-Mm-cGh">
+                                        <rect key="frame" x="0.0" y="204.33333333333334" width="398" height="336.33333333333326"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JvL-F8-I38">
+                                        <rect key="frame" x="0.0" y="582.66666666666663" width="398" height="67"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Brave the treacherous caves, seeking refuge in the subterranean depths." cornerStyle="capsule">
+                                            <backgroundConfiguration key="background" strokeWidth="4" strokeOutset="6">
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" red="0.41237113399999997" green="0.4057835212" blue="0.40054946879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBa-sQ-r7Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="6hM-4W-93p">
+                                        <rect key="frame" x="0.0" y="691.66666666666663" width="398" height="67.333333333333371"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Venture toward the ominous and searing lava fields, hoping to find a safer route." cornerStyle="capsule">
+                                            <backgroundConfiguration key="background" strokeWidth="4" strokeOutset="6">
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" red="0.41237113399999997" green="0.4057835212" blue="0.40054946879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1bW-U8-ihb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cDQ-Mm-cGh" firstAttribute="height" secondItem="JvL-F8-I38" secondAttribute="height" multiplier="5" id="1P7-cu-6CA"/>
+                                    <constraint firstItem="JvL-F8-I38" firstAttribute="leading" secondItem="CUW-Ap-7hG" secondAttribute="leading" id="9a5-G0-Dxb"/>
+                                    <constraint firstAttribute="trailing" secondItem="bQs-6M-yKj" secondAttribute="trailing" constant="10" id="FV0-wl-gRt"/>
+                                    <constraint firstItem="bQs-6M-yKj" firstAttribute="height" relation="lessThanOrEqual" secondItem="cDQ-Mm-cGh" secondAttribute="height" multiplier="0.5" id="Iuz-8x-rjT"/>
+                                    <constraint firstAttribute="trailing" secondItem="JvL-F8-I38" secondAttribute="trailing" id="Jyg-Wj-ZbX"/>
+                                    <constraint firstItem="6hM-4W-93p" firstAttribute="leading" secondItem="CUW-Ap-7hG" secondAttribute="leading" id="Lhe-TI-gbH"/>
+                                    <constraint firstAttribute="trailing" secondItem="JvL-F8-I38" secondAttribute="trailing" constant="10" id="M7Y-pM-zrs"/>
+                                    <constraint firstAttribute="trailing" secondItem="cDQ-Mm-cGh" secondAttribute="trailing" id="Oxf-a3-Q69"/>
+                                    <constraint firstAttribute="trailing" secondItem="JvL-F8-I38" secondAttribute="trailing" id="W9g-gx-TEH"/>
+                                    <constraint firstItem="cDQ-Mm-cGh" firstAttribute="leading" secondItem="CUW-Ap-7hG" secondAttribute="leading" id="Ya0-YD-XVI"/>
+                                    <constraint firstItem="JvL-F8-I38" firstAttribute="leading" secondItem="CUW-Ap-7hG" secondAttribute="leading" id="csL-AH-sV0"/>
+                                    <constraint firstItem="JvL-F8-I38" firstAttribute="height" secondItem="6hM-4W-93p" secondAttribute="height" id="sv1-qr-NUQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="6hM-4W-93p" secondAttribute="trailing" id="u0w-rO-0co"/>
+                                    <constraint firstItem="bQs-6M-yKj" firstAttribute="leading" secondItem="CUW-Ap-7hG" secondAttribute="leading" constant="10" id="ynK-6h-Y5H"/>
+                                    <constraint firstItem="JvL-F8-I38" firstAttribute="leading" secondItem="CUW-Ap-7hG" secondAttribute="leading" constant="10" id="zKZ-s0-5Dv"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="M7Y-pM-zrs"/>
+                                        <exclude reference="csL-AH-sV0"/>
+                                        <exclude reference="zKZ-s0-5Dv"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CUW-Ap-7hG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="80R-ez-grz"/>
+                            <constraint firstItem="CUW-Ap-7hG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="5" id="R8A-6Q-aUn"/>
+                            <constraint firstItem="CUW-Ap-7hG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sqa-ut-LrQ"/>
+                            <constraint firstItem="CUW-Ap-7hG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wZ6-Kw-TL9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonOne" destination="JvL-F8-I38" id="RgT-7d-Doq"/>
+                        <outlet property="buttonTwo" destination="6hM-4W-93p" id="XmV-Y6-G2b"/>
+                        <outlet property="outputLabel" destination="bQs-6M-yKj" id="Osq-Ed-5Yt"/>
+                        <outlet property="sceneArt" destination="cDQ-Mm-cGh" id="01T-Bw-g6S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1024" height="1024"/>
+    </resources>
+</document>
